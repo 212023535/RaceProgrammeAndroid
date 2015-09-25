@@ -1,0 +1,318 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rudizeeman.raceprogramme.HomeActivity"
+    android:background="@android:color/darker_gray">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v4.view.ViewPager>
+    </RelativeLayout>
+
+    <TabHost
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tabHost"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                style="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Menu"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tabDrivers"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:textSize = "40sp">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:text="Driver   "
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:text="Vehicle"
+                                android:textIsSelectable="false"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:text="Pit Crew"
+                                android:textSize="20dp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </TableRow>
+                        <TableRow>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:text="Trevor Momberg" />
+
+                            <TextView
+                                android:text="1971 Fiat 124 Sport"
+                                android:layout_width="match_parent" />
+
+                            <TextView
+                                android:text="No   " />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Bert Upton "/>
+                            <TextView
+                                android:text="1984 Porsche 944   "/>
+
+                            <TextView
+                                android:text="No  "
+                                android:layout_column="2"
+                                />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Billy Matthee "/>
+                            <TextView
+                                android:text="1971 Fiat 124 Sport   "/>
+
+                            <TextView
+                                android:text="No  "
+                                android:layout_column="2"
+                                />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Dave Kent "/>
+                            <TextView
+                                android:text="1981 1800 Datsun Stanza"/>
+
+                            <TextView
+                                android:text="No  "
+                                android:layout_column="2"
+                                />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Eric van der Merwe "/>
+                            <TextView
+                                android:text=" Porsche 924 turbo 1982   "/>
+
+                            <TextView
+                                android:text="No  "
+                                android:layout_column="2"
+                                />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <TextView
+                                android:text="Driver"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize = "20dp"/>
+
+                            <TextView
+                                android:text="Vehicle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize = "20dp"/>
+
+                            <TextView
+                                android:text="Position"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize = "20dp"/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Trevor Momberg" />
+
+                            <TextView
+                                android:text="1971 Fiat 124 Sport"
+                                android:layout_width="match_parent" />
+
+                            <TextView
+                                android:text="01 " />
+
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Bert Upton "/>
+                            <TextView
+                                android:text="1984 Porsche 944   "/>
+
+                            <TextView
+                                android:text="02 "
+                                />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Billy Matthee "/>
+                            <TextView
+                                android:text="1971 Fiat 124 Sport   "/>
+
+                            <TextView
+                                android:text="03"
+                                />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Dave Kent "/>
+                            <TextView
+                                android:text="1981 1800 Datsun Stanza"/>
+
+
+                            <TextView
+                                android:text="04     "/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Eric van der Merwe "/>
+                            <TextView
+                                android:text=" Porsche 924 turbo 1982   "/>
+
+                            <TextView
+                                android:text="05      "/>
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabLapTimes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <TextView
+                                android:text="Driver"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20dp"/>
+
+                            <TextView
+                                android:text="Vehicle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20dp"/>
+
+                            <TextView
+                                android:text="Best Lap"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20dp"/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Trevor Momberg" />
+
+                            <TextView
+                                android:text="1971 Fiat 124 Sport"
+                                android:layout_width="match_parent" />
+
+                            <TextView
+                                android:text="01:16.517"
+                                />
+
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Bert Upton "/>
+                            <TextView
+                                android:text="1984 Porsche 944   "/>
+                            <TextView
+                                android:text="01:17.007"/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Billy Matthee "/>
+                            <TextView
+                                android:text="1971 Fiat 124 Sport   "/>
+
+                            <TextView
+                                android:text="01:17.372"/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Dave Kent "/>
+                            <TextView
+                                android:text="1981 1800 Datsun Stanza"/>
+
+                            <TextView
+                                android:text="01:17.797"/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Eric van der Merwe "/>
+                            <TextView
+                                android:text=" Porsche 924 turbo 1982   "/>
+
+                            <TextView
+                                android:text="01:17.983"/>
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</RelativeLayout>

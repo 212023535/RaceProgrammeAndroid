@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".MainActivity"
+    >
+
+
+    //create spinner
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spnTrack"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center"
+        android:visibility="visible"
+        android:focusable="true"
+        android:foreground="@color/accent_material_light"
+        android:backgroundTint="@color/accent_material_light"
+        style="@style/AlertDialog.AppCompat.Light"
+        android:foregroundTint="@color/abc_background_cache_hint_selector_material_light"
+        android:theme="@style/AlertDialog.AppCompat.Light"
+        android:clickable="false"
+        android:background="@drawable/abc_spinner_textfield_background_material"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    //create image view
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:background="@android:color/background_dark"
+        android:src="@drawable/raceprogrammelogo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/spnTrack"
+        android:layout_alignParentTop="true" />
+
+    //Create label
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Please Select Track"
+        android:id="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/link_text_material_light"
+        android:layout_toStartOf="@+id/btnGoTrack"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_below="@+id/imageView"
+        android:layout_toLeftOf="@+id/btnGoTrack" />
+
+    //Create button
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        android:id="@+id/btnGoTrack"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/spnTrack"
+        android:onClick="sendMessage"/>
+    
+</RelativeLayout>

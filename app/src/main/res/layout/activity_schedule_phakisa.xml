@@ -1,0 +1,91 @@
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rudizeeman.raceprogramme.Schedule"
+    android:stretchColumns="1"
+    android:id="@+id/scheduleLayout"
+    android:background="@android:color/background_light">
+
+    <TableRow>
+        <TextView android:text= "Classes                    "
+            android:padding="10dip"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:background="@color/accent_material_dark"
+            android:textSize="20sp"/>
+        <TextView android:text="Times"
+            android:textSize="20sp"
+            android:padding="10dip"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:background="@color/accent_material_dark"
+            android:singleLine="true" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Alfa Romeo Trofeo / Porsche  "
+            android:paddingBottom="20dp"
+            android:textSize="20sp" />
+        <TextView
+            android:text="08:30"
+            android:textSize="20sp"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:textSize="20sp"
+            android:text="Super Saloons"
+            android:paddingBottom="20dp"/>
+        <TextView
+            android:text="09:30"
+            android:textSize="20sp"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Silver Cup"
+            android:paddingBottom="20dp"
+            android:textSize="20sp"/>
+        <TextView
+            android:text="10:30"
+            android:textSize="20sp"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Super Hatch"
+            android:paddingBottom="20dp"
+            android:textSize="20sp"/>
+        <TextView
+            android:text="11:30"
+            android:textSize="20sp"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Inex Legends"
+            android:paddingBottom="20dp"
+            android:textSize="20sp"/>
+        <TextView
+            android:text="12:00"
+            android:textSize="20sp"/>
+    </TableRow>
+    <TableRow android:background="@android:color/holo_red_dark">
+        <TextView
+            android:text="LUNCH"
+            android:paddingBottom="20dp"
+            android:textSize="20sp"
+            android:background="@android:color/holo_red_dark"/>
+        <TextView
+            android:text="13:00"
+            android:textSize="20sp"
+            android:background="@android:color/holo_red_dark"/>
+    </TableRow>
+    <TableRow android:background="@android:color/holo_blue_bright">
+        <TextView
+            android:text="TBA"
+            android:paddingBottom="20dp"
+            android:textSize="20sp" />
+        <TextView
+            android:text="14:00"
+            android:textSize="20sp"/>
+    </TableRow>
+
+</TableLayout>

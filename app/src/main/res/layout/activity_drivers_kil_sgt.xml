@@ -1,0 +1,309 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rudizeeman.raceprogramme.HomeActivity"
+    android:background="@android:color/darker_gray">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v4.view.ViewPager>
+    </RelativeLayout>
+
+    <TabHost
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tabHost"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                style="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Menu"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tabDrivers"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:textSize = "40sp">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:text="Driver   "
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:text="Vehicle"
+                                android:textIsSelectable="false"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:text="Pit Crew"
+                                android:textSize="20dp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </TableRow>
+                        <TableRow>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:text="John Love  " />
+
+                            <TextView
+                                android:text="Porsche 997 GT3 Cup"
+                                android:layout_width="match_parent" />
+
+                            <TextView
+                                android:text="Yes   " />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Dawie Joubert "/>
+                            <TextView
+                                android:text="Lotus Exige R   "/>
+
+                            <TextView
+                                android:text="No  "
+                                android:layout_column="2"
+                                />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Johann Engelbrecht "/>
+                            <TextView
+                                android:text="Porsche GT3 Cup   "/>
+
+                            <TextView
+                                android:text="Yes  "
+                                android:layout_column="2"
+                                />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Scois Joubert "/>
+                            <TextView
+                                android:text="Ariel Atom 300   "/>
+
+                            <TextView
+                                android:text="No  "
+                                android:layout_column="2"
+                                />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Craig Jarvis "/>
+                            <TextView
+                                android:text="Porsche GT3 Cup   "/>
+
+                            <TextView
+                                android:text="Yes  "
+                                android:layout_column="2"
+                                />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <TextView
+                                android:text="Driver"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize = "20dp"/>
+
+                            <TextView
+                                android:text="Vehicle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize = "20dp"/>
+
+                            <TextView
+                                android:text="Position"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize = "20dp"/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="John Love "
+                                />
+                            <TextView
+                                android:text="Porsche 997 GT3 Cup  "
+                                />
+                            <TextView
+                                android:text="01    "
+                                />
+
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Dawie Joubert "/>
+                            <TextView
+                                android:text="Lotus Exige R   "/>
+                            <TextView
+                                android:text="02      "/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Johann Engelbrecht "/>
+                            <TextView
+                                android:text="Porsche GT3 Cup   "/>
+
+                            <TextView
+                                android:text="03      "/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Scois Joubert "/>
+                            <TextView
+                                android:text="Ariel Atom 300   "/>
+
+                            <TextView
+                                android:text="04     "/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Craig Jarvis "/>
+                            <TextView
+                                android:text="Porsche GT3 Cup   "/>
+
+                            <TextView
+                                android:text="05      "/>
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabLapTimes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <TextView
+                                android:text="Driver"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20dp"/>
+
+                            <TextView
+                                android:text="Vehicle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20dp"/>
+
+                            <TextView
+                                android:text="Best Lap"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20dp"/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="John Love "/>
+                            <TextView
+                                android:text="Porsche 997 GT3 Cup"/>
+                            <TextView
+                                android:text="01:16:42  "/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Dawie Joubert "/>
+                            <TextView
+                                android:text="Lotus Exige R   "/>
+                            <TextView
+                                android:text="01:14:12  "/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Johann Engelbrecht "/>
+                            <TextView
+                                android:text="Porsche GT3 Cup   "/>
+
+                            <TextView
+                                android:text="01:15:13  "/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Scois Joubert "/>
+                            <TextView
+                                android:text="Ariel Atom 300   "/>
+
+                            <TextView
+                                android:text="01:15:18  "/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Craig Jarvis "/>
+                            <TextView
+                                android:text="Porsche GT3 Cup   "/>
+
+                            <TextView
+                                android:text="01:15:84  "/>
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</RelativeLayout>
